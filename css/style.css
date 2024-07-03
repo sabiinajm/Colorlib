@@ -83,7 +83,6 @@ nav {
   background-color: #fff;
   position: static;
   z-index: 2;
-  width: 100vw;
   border-bottom: 1px #bbbbbb solid;
 }
 #logo a {
@@ -295,6 +294,7 @@ footer {
 @media only screen and (min-width: 768px) {
   nav {
     position: fixed;
+    width: 100vw;
   }
   #menu {
     display: flex;
