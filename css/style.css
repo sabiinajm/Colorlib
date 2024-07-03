@@ -237,34 +237,50 @@ button {
   justify-content: center;
   align-items: center;
 }
-.carousel-control-next, .carousel-control-prev{
+.carousel-control-next,
+.carousel-control-prev {
   top: 50%;
   height: 1.5rem;
 }
-.customer-img{
+.customer-img {
   border-radius: 50%;
   height: 100px;
 }
-#clients{
+#clients {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
 }
-.client-imgs img{
+.client-imgs img {
   margin: 70px;
   width: 60px;
   filter: opacity(70%);
-  transition: .2s ease;
+  transition: 0.2s ease;
 }
-.client-imgs img:hover{
+.client-imgs img:hover {
   filter: opacity(100%);
 }
-h6{
-  padding: 15px;
+h6 {
+  padding: 0.9rem;
+}
+footer {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+}
+.icons i{
+  font-size: 1.1rem;
+  margin-right: 15px;
+}
+.icons i:hover{
+  color: var(--l-purp);
 }
 @media only screen and (min-width: 768px) {
-  nav{
+  nav {
     position: fixed;
   }
   #menu {
@@ -279,7 +295,7 @@ h6{
     font-size: 3.8rem;
   }
   #small p,
-  #limitless p{
+  #limitless p {
     width: 70%;
   }
   #limitless img {
@@ -311,5 +327,8 @@ h6{
   }
   .overlay-container {
     width: 25%;
+  }
+  footer{
+    flex-direction: row;
   }
 }
