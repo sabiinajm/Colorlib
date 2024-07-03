@@ -73,7 +73,7 @@ body {
 }
 header {
   height: 100vh;
-  background: url(/img/img-1.jpg) center/cover fixed;
+  background: url(../img/img-1.jpg) center/cover fixed;
 }
 nav {
   height: 75px;
@@ -165,7 +165,7 @@ button {
   padding-bottom: 40px;
 }
 #small {
-  background: url(/img/img-2.jpg) center/cover fixed;
+  background: url(../img/img-2.jpg) center/cover fixed;
   height: 60vh;
   display: flex;
   flex-direction: column;
@@ -222,13 +222,17 @@ button {
   text-align: center;
 }
 #customers {
-  background: url(/img/img-4.jpg) center/cover fixed;
+  background: url(../img/img-4.jpg) center/cover fixed;
   padding: 50px 0;
 }
 .carousel-item {
   text-align: center;
   width: 50%;
   margin-right: 0;
+}
+#carouselExampleFade{
+  height: 360px;
+  overflow: hidden;
 }
 .carousel-inner {
   display: flex;
