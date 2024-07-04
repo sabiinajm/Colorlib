@@ -2,6 +2,8 @@
 :root {
   --purp: #3a52bf;
   --l-purp: #745cf9;
+  --grey: #4c4c4c;
+  --l-grey: #666;
 }
 .purp-txt {
   color: var(--l-purp);
@@ -40,7 +42,7 @@
 }
 .btn-bg:hover {
   background-color: #fff;
-  color: #4c4c4c;
+  color: var(---grey);
   transition: 0.3s;
 }
 /* bootstrap changes */
@@ -86,7 +88,7 @@ nav {
   border-bottom: 1px #bbbbbb solid;
 }
 #logo a {
-  color: #666;
+  color: var(--l-grey);
   font-size: 1.5rem;
   font-weight: 400;
 }
@@ -94,7 +96,7 @@ nav {
   display: none;
 }
 #menu li a {
-  color: #4c4c4c;
+  color: var(---grey);
   text-transform: uppercase;
   padding-right: 30px;
   font-size: 0.8rem;
