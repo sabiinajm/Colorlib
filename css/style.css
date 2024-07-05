@@ -89,7 +89,7 @@ nav {
 }
 #logo a {
   color: var(--l-grey);
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 400;
 }
 #menu {
@@ -111,7 +111,7 @@ nav {
   color: var(--purp);
 }
 .container {
-  height: calc(100vh + 75px);
+  height: calc(100vh - 75px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -200,28 +200,24 @@ button {
 }
 .overlay-container {
   position: relative;
+  overflow: hidden;
 }
 .overlay {
   position: absolute;
-  top: 0;
+  top: 100%;
   left: 0;
   height: 100%;
   width: 100%;
-  opacity: 0;
-  transition: 0.5s ease;
-  background-color: #00000085;
-}
-.overlay-container:hover .overlay {
-  opacity: 1;
-}
-.overlay-txt {
+  transition: 0.3s ease;
+  background: linear-gradient(to bottom, transparent, #00000080);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
   font-size: 1.4rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+}
+.overlay-container:hover .overlay {
+  top: 0;
 }
 #customers {
   background: url(../img/img-4.jpg) center/cover fixed;
@@ -232,8 +228,8 @@ button {
   width: 50%;
   margin-right: 0;
 }
-#carouselExampleFade{
-  height: 360px;
+#carouselExampleFade {
+  height: 450px;
   overflow: hidden;
 }
 .carousel-inner {
@@ -257,7 +253,6 @@ button {
   justify-content: center;
   align-items: center;
   padding: 20px;
-
 }
 .client-imgs img {
   margin: 70px;
@@ -271,14 +266,14 @@ button {
 h6 {
   padding: 0.9rem;
 }
-#likeit{
+#likeit {
   display: flex;
   flex-direction: column;
   height: 30vh;
   justify-content: space-evenly;
   align-items: center;
 }
-#likeit h2{
+#likeit h2 {
   font-size: 2.2rem;
   font-weight: 400;
 }
@@ -290,11 +285,11 @@ footer {
   align-items: center;
   padding: 50px;
 }
-.icons i{
+.icons i {
   font-size: 1.1rem;
   margin-right: 15px;
 }
-.icons i:hover{
+.icons i:hover {
   color: var(--l-purp);
 }
 @media only screen and (min-width: 768px) {
@@ -308,6 +303,9 @@ footer {
 
   #hamburger {
     display: none;
+  }
+  .container{
+    height: calc(100vh + 75px);
   }
   .container h1,
   #small h1 {
@@ -339,6 +337,7 @@ footer {
   }
   #gallery {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
   }
   #gallery img {
@@ -346,12 +345,15 @@ footer {
   }
   .overlay-container {
     width: 25%;
+    min-width: 260px;
   }
-  #likeit{
+  #carouselExampleFade {
+    height: 380px;
+  }
+  #likeit {
     flex-direction: row;
-    
   }
-  footer{
+  footer {
     flex-direction: row;
   }
 }
